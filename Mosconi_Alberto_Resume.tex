@@ -1,0 +1,146 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.albertomosconi.it/}{\Large Alberto Mosconi}} &  \href{mailto:albertomaria.mosconi@gmail.com}{albertomaria.mosconi@gmail.com}\\
+  \href{https://www.albertomosconi.it/}{www.albertomosconi.it} & \href{https://www.github.com/albertomosconi}{github.com/albertomosconi}\\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {CBIM}{Pavia, IT}
+      {Web Developer}{Oct 2019 -- Apr 2020}
+      \resumeItemListStart
+        \resumeItem{Full Stack Development}
+          {Built two professional web applications using ReactJS with Bootstrap for the front-end. Integrated them with two databases through rest APIs with SpringBoot.}
+      \resumeItemListEnd
+
+   % \resumeSubheading
+     % {Freelance}{Online}
+      %{From Development to Design}{2015 -- Today}
+      %\resumeItemListStart
+        %\resumeItem{Web Development \& Design}
+         % {Developed React components, built simple static HTML pages and worked with Wordpress websites.}
+        %\resumeItem{3D Modelling}
+	%{Modelled a prototype using Blender that was then 3D printed and used in testing.}
+%      \resumeItemListEnd
+ 
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{\href{www.slashbinteam.github.io}{./bin}}
+	{A mobile application with a modern UI to help with recycling. It uses a machine learning model, trained on a dataset of images, to predict how the photographed item should be recycled. In addition the user can choose to send the photo to the database and further improve the accuracy of the predictions.}
+\resumeSubItem{\href{www.algvisualizer.web.app}{AlgVisualizer}}
+	{A useful tool to visualize different algorithms, it is built with React and offers a clean and fast UI. As of now two sorting algorithms are implemented: Insertion and Selection Sort, along with the Dijkstra pathfinding algolrithm, and a few simple cellular automata.}
+\resumeSubItem{\href{www.albertomosconi.it}{Personal Website}}
+	{Built my website using ReactJS and Bootstrap as a front-end and Firebase Functions to handle back-end calls. It also utilizes the Github API to display all my projects.}
+\resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Polytechnic University of Milan}{Milan, IT}
+      {Bachelor of Engineering of Computing Systems.}{Sept. 2018 -- Today}
+    \resumeSubheading
+      {Liceo Scientifico T. Taramelli}{Pavia, IT}
+      {Scientific High School Diploma; Final Score: 86/100.}{Sept. 2013 -- July. 2018}
+    \resumeSubheading
+      {Online Courses}{Online}
+      {Completed several online courses on web development and machine learning.}{2015 -- Today}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Skillset}
+  \resumeSubHeadingListStart
+   \resumeSubItem {Languages}
+      {Python, Javascript, C, C++, Java, HTML, CSS}
+   \resumeSubItem {Technologies}
+      {ReactJS, GatsbyJS, Wordpress, Firebase, SpringBoot, PyTorch, Photoshop, Blender}
+  
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
