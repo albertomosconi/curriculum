@@ -1,3 +1,3 @@
 <h1 align="center">
-  My Personal Curriculum
+  My Curriculum Vitae
 </h1>
